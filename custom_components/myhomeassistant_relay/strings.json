@@ -1,0 +1,87 @@
+{
+  "title": "My Home Assistant Relay",
+  "config": {
+    "step": {
+      "entities": {
+        "title": "Choose entities to relay",
+        "description": "Select up to {limit} entities. This syncs the selected list to your service account. Locks and covers remain read-only unless explicitly enabled in that account; scripts can run wider local actions.",
+        "data": {
+          "entity_ids": "Selected entities"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Update your connection key",
+        "description": "Paste the replacement key for this same connection from your service account.",
+        "data": {
+          "token": "Replacement connection key"
+        }
+      },
+      "automatic": {
+        "title": "Use the automatic entity picker",
+        "description": "Paste your relay token and choose entities. This mode sends and receives automatically. Do not also run a relay UI automation or YAML package for this connection.",
+        "data": {
+          "token": "Private connection key"
+        }
+      },
+      "user": {
+        "title": "How would you like to connect?",
+        "menu_options": {
+          "automation": "Use a UI automation",
+          "automatic": "Choose entities in this integration"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The relay token is invalid, revoked, disabled, or no longer licensed.",
+      "cannot_connect": "Unable to reach myhomeassistant.top. Check that Home Assistant can connect to the internet.",
+      "rate_limited": "The service asked this client to wait. Try again later and check for another client using the same license.",
+      "entity_limit": "Choose at least one entity within your current plan's limit."
+    },
+    "abort": {
+      "already_configured": "This relay license already has an integration entry.",
+      "unique_id_mismatch": "Use a token for the same license.",
+      "reauth_successful": "The relay token has been updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edit selected relay entities",
+        "description": "Changes sync to the service. Removed entities stop being shared; sensitive permissions can only be granted in your service account. Keep the selected list within your plan allowance.",
+        "data": {
+          "entity_ids": "Selected entities"
+        }
+      },
+      "automation": {
+        "title": "Relay UI automation helper",
+        "description": "Update your token and selected entities in the relay automation under Settings → Automations. Save the automation to apply changes; this helper sends no background requests."
+      }
+    },
+    "error": {
+      "invalid_auth": "Replace the relay token using reauthentication.",
+      "cannot_connect": "Unable to reach the relay service.",
+      "rate_limited": "Wait before editing again; the service limits configuration requests.",
+      "entity_limit": "Choose at least one entity within your current plan's limit."
+    }
+  },
+  "services": {
+    "sync": {
+      "name": "Send states and collect controls",
+      "description": "Use a UI automation to share the selected entity states and collect queued controls over outbound HTTPS. Add the Relay UI automation helper first. Keep the token private.",
+      "fields": {
+        "token": {
+          "name": "Relay token",
+          "description": "The current private token from your myhomeassistant.top account."
+        },
+        "entity_ids": {
+          "name": "Selected entities",
+          "description": "The same selected entity list shown in your relay account."
+        },
+        "poll_commands": {
+          "name": "Collect controls",
+          "description": "Leave on for scheduled updates; turn off for device-change updates to preserve the command-pull allowance."
+        }
+      }
+    }
+  }
+}

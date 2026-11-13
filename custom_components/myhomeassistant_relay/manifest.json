@@ -1,0 +1,14 @@
+{
+  "domain": "myhomeassistant_relay",
+  "name": "My Home Assistant Relay",
+  "version": "0.3.3",
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "documentation": "https://myhomeassistant.top/relay-guide",
+  "codeowners": [
+    "@s2kta4"
+  ],
+  "requirements": [],
+  "issue_tracker": "https://github.com/s2kta4/myhomeassistant-relay/issues"
+}

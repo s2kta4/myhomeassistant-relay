@@ -1,0 +1,16 @@
+sync:
+  fields:
+    token:
+      required: true
+      selector:
+        text:
+          type: password
+    entity_ids:
+      required: true
+      selector:
+        entity:
+          multiple: true
+    poll_commands:
+      default: true
+      selector:
+        boolean:
