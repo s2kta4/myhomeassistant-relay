@@ -1,0 +1,5 @@
+{
+  "name": "My Home Assistant Relay",
+  "homeassistant": "2026.9.0",
+  "content_in_root": false
+}
