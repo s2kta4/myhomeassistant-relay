@@ -1,6 +1,15 @@
 # My Home Assistant Relay
 
-My Home Assistant Relay connects selected Home Assistant entities to your private dashboard at [myhomeassistant.top](https://myhomeassistant.top/relay). It makes outbound HTTPS connections; the Relay integration does not require opening an inbound port on your home router. You choose which entities to share.
+![My Home Assistant Relay: your home, wherever you are. Dashboard shown with sample data.](https://myhomeassistant.top/assets/social-relay.png)
+
+**Your home, wherever you are.** Bring selected Home Assistant readings and everyday controls together in your private Relay dashboard.
+
+- **Easy setup:** choose entities using Home Assistant’s picker.
+- **No port forwarding for Relay:** your Home Assistant connects using outbound HTTPS.
+- **Try Relay free:** start with the free plan and explore paid options for larger dashboards.
+- **Your choice of controls:** you decide what to share; sensitive controls need explicit approval.
+
+[Explore My Home Assistant Relay →](https://myhomeassistant.top/relay) · [View the setup guide →](https://myhomeassistant.top/relay-guide)
 
 ## Requirements
 
