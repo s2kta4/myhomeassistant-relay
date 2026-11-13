@@ -6,12 +6,14 @@ from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryNotReady, ServiceValidationError
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers import config_validation as cv
 
 from .api import RelayApi, RelayAuthError, RelayError
 from .const import CONF_MODE, CONF_SERVER_URL, CONF_TOKEN, DOMAIN, MODE_AUTOMATIC, MODE_AUTOMATION, SERVICE_SYNC
 from .coordinator import RelayCoordinator
 from .automation import AutomationRelayManager
 
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 PLATFORMS = [Platform.SENSOR]
 
 
