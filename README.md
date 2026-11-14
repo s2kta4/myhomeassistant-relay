@@ -1,6 +1,6 @@
 # My Home Assistant Relay
 
-![My Home Assistant Relay: your home, wherever you are. Dashboard shown with sample data.](https://myhomeassistant.top/assets/social-relay.png)
+![My Home Assistant Relay: your home, wherever you are. Dashboard shown with sample data.](assets/social-relay.png)
 
 **Your home, wherever you are.** Bring selected Home Assistant readings and everyday controls together in your private Relay dashboard.
 
