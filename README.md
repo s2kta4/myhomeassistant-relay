@@ -1,15 +1,15 @@
-# My Home Assistant Relay
+# MyHomeAssistant.top — Relay for Home Assistant
 
 ![My Home Assistant Relay: your home, wherever you are. Dashboard shown with sample data.](assets/social-relay.png)
 
-**Your home, wherever you are.** Bring selected Home Assistant readings and everyday controls together in your private Relay dashboard.
+**MyHomeAssistant.top** brings selected Home Assistant readings and everyday controls together in your private Relay dashboard.
 
 - **Easy setup:** choose entities using Home Assistant’s picker.
 - **No port forwarding for Relay:** your Home Assistant connects using outbound HTTPS.
 - **Try Relay free:** start with the free plan and explore paid options for larger dashboards.
 - **Your choice of controls:** you decide what to share; sensitive controls need explicit approval.
 
-[Explore My Home Assistant Relay →](https://myhomeassistant.top/relay) · [View the setup guide →](https://myhomeassistant.top/relay-guide)
+[Explore MyHomeAssistant.top Relay →](https://myhomeassistant.top/relay) · [View the setup guide →](https://myhomeassistant.top/relay-guide)
 
 ## Requirements
 
