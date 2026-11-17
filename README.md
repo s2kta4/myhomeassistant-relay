@@ -19,14 +19,15 @@
 
 ## Installation
 
-Until this repository is accepted into the default HACS catalog, add it as a custom repository:
+Once the integration is included in the default HACS catalog:
 
-1. In Home Assistant, open **HACS** and select the three-dot menu, then **Custom repositories**.
-2. Add `https://github.com/s2kta4/myhomeassistant-relay` with the **Integration** category.
-3. Find **My Home Assistant Relay** in HACS and download it, then restart Home Assistant.
-4. Open **Settings → Devices & services → Add integration**, and select **My Home Assistant Relay**.
+1. In Home Assistant, open **HACS** and search for **My Home Assistant Relay**.
+2. Download it, then restart Home Assistant.
+3. Open **Settings → Devices & services → Add integration** and select **My Home Assistant Relay**.
 
-These instructions apply after the public repository and release are published. For manual installation and the full setup guide, see the [Relay guide](https://myhomeassistant.top/relay-guide).
+Until the default listing is approved, add it as a custom repository first: in **HACS**, open the three-dot menu, choose **Custom repositories**, add `https://github.com/s2kta4/myhomeassistant-relay`, select **Integration**, and choose **Add**. Then follow the steps above.
+
+For manual installation and the full setup guide, see the [Relay guide](https://myhomeassistant.top/relay-guide).
 
 ## Set up the entity picker
 
