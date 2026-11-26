@@ -1,11 +1,14 @@
 """My Home Assistant outbound relay custom integration."""
 from __future__ import annotations
 
+import voluptuous as vol
+
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryNotReady, ServiceValidationError
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers.service import async_register_admin_service
 from homeassistant.helpers import config_validation as cv
 
 from .api import RelayApi, RelayAuthError, RelayError
@@ -27,7 +30,7 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
             raise ServiceValidationError("Add My Home Assistant Relay and choose Use a UI automation first")
         await manager.async_sync(dict(call.data))
 
-    hass.services.async_register(DOMAIN, SERVICE_SYNC, sync)
+    async_register_admin_service(hass, DOMAIN, SERVICE_SYNC, sync, schema=vol.Schema({}, extra=vol.ALLOW_EXTRA))
     return True
 
 
