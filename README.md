@@ -19,13 +19,13 @@
 
 ## Installation
 
-Once the integration is included in the default HACS catalog:
+The integration has been accepted into the default HACS catalog. It may take up to 8 hours after approval to appear in search:
 
 1. In Home Assistant, open **HACS** and search for **My Home Assistant Relay**.
 2. Download it, then restart Home Assistant.
 3. Open **Settings → Devices & services → Add integration** and select **My Home Assistant Relay**.
 
-Until the default listing is approved, add it as a custom repository first: in **HACS**, open the three-dot menu, choose **Custom repositories**, add `https://github.com/s2kta4/myhomeassistant-relay`, select **Integration**, and choose **Add**. Then follow the steps above.
+If you can't find it yet, you can add it as a custom repository: in **HACS**, open the three-dot menu, choose **Custom repositories**, add `https://github.com/s2kta4/myhomeassistant-relay`, select **Integration**, and choose **Add**. Then follow the steps above.
 
 For manual installation and the full setup guide, see the [Relay guide](https://myhomeassistant.top/relay-guide).
 
